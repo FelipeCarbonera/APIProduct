@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiProduct</name>
+    </assembly>
+    <members>
+        <member name="M:ApiProduct.Controllers.ProductController.Get">
+            <summary>
+            Return all Products in DB
+            </summary>
+            <remarks>
+                Return Example:
+                [
+                    {
+                        "id": 1,
+                        "name": "PRODUTO 1",
+                        "description": "DESCRIÇÃO DO PRODUTO 1",
+                        "price": 6,6
+                        "iD_Category": 1,
+                        "date": "2020-09-01T00:00:00"
+                    },
+                    {
+                        "id": 2,
+                        "name": "PRODUTO 2",
+                        "description": "DESCRIÇÃO DO PRODUTO 2",
+                        "price": 7,6
+                        "iD_Category": 2,
+                        "date": "2020-09-01T00:00:00"
+                    }
+                ]
+            </remarks>
+            <returns>A List of Products</returns>
+            <param>No parameters</param>
+        </member>
+        <member name="M:ApiProduct.Controllers.ProductController.Get(System.Int64)">
+            <summary>
+            Return an especific Product by Id
+            </summary>
+            <remarks>
+                Return Example:
+                    {
+                        "id": 1,
+                        "name": "PRODUTO 1",
+                        "description": "DESCRIÇÃO DO PRODUTO 1",
+                        "price": 6,6
+                        "iD_Category": 1,
+                        "date": "2020-09-01T00:00:00"
+                    },
+            </remarks>
+            <returns>A Product object</returns>
+            <param name="id">The Id of the Product to search for</param>
+        </member>
+        <member name="M:ApiProduct.Controllers.ProductController.Post(ApiProduct.Models.Product)">
+            <summary>
+            Insert a new Product
+            </summary>
+            <remarks>
+                Return Example:
+                    true
+            </remarks>
+            <returns>A boolean</returns>
+            <param name="prod">The Product object to insert</param>
+        </member>
+        <member name="M:ApiProduct.Controllers.ProductController.Put(ApiProduct.Models.Product)">
+            <summary>
+            Update a Product
+            </summary>
+            <remarks>
+                Return Example:
+                    true
+            </remarks>
+            <returns>A boolean</returns>
+            <param name="prod">The Product object to update</param>
+        </member>
+        <member name="M:ApiProduct.Controllers.ProductController.Delete(System.Int64)">
+            <summary>
+            Delete a specific Product by ID
+            </summary>
+            <param name="id">The Id to especific Product to Delete</param>
+        </member>
+    </members>
+</doc>
